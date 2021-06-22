@@ -90,15 +90,21 @@ Return the modified array.
 
 const addValues = (arr, value) => {
 arr.push(value)
+}
+const addNumbers = (num, arr, times, func) => {
+  let newArr = new Array(times)
+  newArr.fill(num)
 
+  newArr.forEach((item) => {
+    func(arr, item)
+  }
+  )
+  return arr
   
-  
 
-};
+}
 
-const addNumbers = (num, arr, times, callback) => {
-  arr.push(callback(num))
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 

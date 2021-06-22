@@ -25,10 +25,10 @@ Returns: ['dyoll', 'eimaj'];
 
   const getNames = (arr) => {
     // Solution code here...
-    let newArr = arr.map((item) => {
-      return reversedString(item.name)
-      } )
-      return newArr
+    let array = arr.map((item) => {
+      return item.name.split("").reverse().join("")
+    })
+    return array
     
 
     
