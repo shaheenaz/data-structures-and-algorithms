@@ -87,26 +87,23 @@ Within the addNumbers function, invoke the callback function as many times as ne
 
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
-
 const addValues = (arr, value) => {
-arr.push(value)
-}
-const addNumbers = (num, arr, times, func) => {
-  let newArr = new Array(times)
-  newArr.fill(num)
 
-  newArr.forEach((item) => {
-    func(arr, item)
+  arr.push(value)
   }
-  )
-  return arr
+  const addNumbers = (num, arr, times, func) => {
+    let newArr = new Array(times)
+    newArr.fill(num)
   
-
-}
-
-
-
-/* ------------------------------------------------------------------------------------------------
+    newArr.forEach((item) => {
+      func(arr, item)
+    }
+    )
+    return arr
+    
+  
+  }
+----------------------------------------------------------------------------------
 
 CHALLENGE 6
 
@@ -125,7 +122,6 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-
   let array =[];
   availableItems.forEach((item)=>{
     if(item.available === true) {
@@ -133,7 +129,7 @@ array.push(item.name)
     }
     ;})
   return array;
-  
+
 };
 
 /* ------------------------------------------------------------------------------------------------
