@@ -1,15 +1,12 @@
 
 //https://www.geeksforgeeks.org/binary-search/
 puplic class App{
-  
     int binarySearch(int arr[], int l, int r, int x)
     {
         if (r >= l) {
             int mid = l + (r - l) / 2;
-  
             if (arr[mid] == x)
                 return mid;
-
             if (arr[mid] > x)
                 return binarySearch(arr, l, mid - 1, x);
             return binarySearch(arr, mid + 1, r, x);
@@ -17,7 +14,6 @@ puplic class App{
         return -1;
     }
   
-   
     public static void main(String args[])
     {
         BinarySearch ob = new BinarySearch();
