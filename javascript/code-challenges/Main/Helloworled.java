@@ -5,12 +5,11 @@ public class HelloWorld {
        test.insert(1);
       test.insert(2);
 
-        Node current = test.head;
-        while (current != null) {
-            System.out.println(current.value);
-            current = current.next;
-        }
+       test.append(3);
+       test.after(1,2);
+       test.before(4,5);
         System.out.println(test.includes(3));
 System.out.println(test.toStings());
+
     }
 }
