@@ -10,6 +10,7 @@ public class HelloWorld {
        test.before(4,5);
         System.out.println(test.includes(3));
 System.out.println(test.toStings());
+System.out.println(test.KTH(6));
 
     }
 }

@@ -11,5 +11,5 @@ challenge 3
 [challenge3](challenge2.java)
 [whiteboared](challend3.png)
 
-challenge 5 &6 
+challenge 5 &6 & 7
 [challenge5](javascript/code-challenges/Main)

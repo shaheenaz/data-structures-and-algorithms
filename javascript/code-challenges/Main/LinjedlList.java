@@ -73,6 +73,22 @@ public class LinjedList {
             current.next = newNode;
         }
     }
+    public int KTH(int k){
+        ArrayList<Integer> nodesNum = new ArrayList<Integer>();
+        int nodesVal = 0;
+        Node current = head;
+        while (current !=null){
+        current=current.next;
+        }
+        try{
+            nodesVal= nodesNum.get(nodesNum.size()-k);
+        }
+        catch (Exception e){
+            System.out.println("Something went wrong.");
+
+        }
+        return nodesVal;
+    }
 }
 
 
