@@ -1,4 +1,6 @@
 package com.example.helloworld;
+import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class LinjedList {
     Node head;
@@ -89,6 +91,7 @@ public class LinjedList {
         }
         return nodesVal;
     }
+  
 }
 
 
